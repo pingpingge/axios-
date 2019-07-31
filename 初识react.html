@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>初识react</title>
+	<script src="js/react.min.js"></script>
+	<script src="js/react-dom.min.js"></script>
+	<script src="js/browser.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div id="root"></div>
+	<script type="text/babel">
+		var Box = React.createClass({
+			render:function(){
+				return (
+					<div className="sss"> 
+						<Header />
+						<Banner />
+						<Nav />
+						<Gif />
+						<Prolist />
+						<Mq />
+						<Imglist />
+						<Ban />	
+						<Pl />
+						<Bana />
+						<Pla />
+						<Banb />
+						<Plb />
+						<Footer />
+					</div>
+				)
+			}
+		})
+		
+		var Header = React.createClass({
+			render:function(){
+				return (
+					<div className="head">
+						<img src="img/weizhi.png" alt="" /> 上海 <span> > </span>
+					</div>
+				)
+			}
+		})
+
+		var Banner = React.createClass({
+			render:function(){
+				return (
+					<div className="banner">
+						<img src="img/banner2.jpg" alt="" /> 
+					</div>
+				)
+			}
+		})
+
+		var Nav = React.createClass({
+			render:function(){
+				return (
+					<div className="nav">
+						<img src="img/title.png" alt="" />
+					</div>
+				)
+			}
+		})
+
+
+		var Gif = React.createClass({
+			render:function(){
+				return (
+					<div className="gif">
+						<img src="img/tusi.gif" alt="" />
+					</div>
+				)
+			}
+		})
+
+
+		var Prolist = React.createClass({
+			render:function(){
+				return (
+					<div className="list">
+						<div>
+							<div className="img"><img src="img/prolist.jpg" alt="" /></div>
+							<div className="text">蛋糕</div>
+						</div>
+						<div>
+							<div className="img"><img src="img/prolist1.jpg" alt="" /></div>
+							<div className="text">西点</div>
+						</div>
+						<div>
+							<div className="img"><img src="img/prolist2.jpg" alt="" /></div>
+							<div className="text">乳品</div>
+						</div>
+						<div>
+							<div className="img"><img src="img/prolist3.jpg" alt="" /></div>
+							<div className="text">冰淇淋</div>
+						</div>
+						<div>
+							<div className="img"><img src="img/prolist4.jpg" alt="" /></div>
+							<div className="text">卡卷兑换</div>
+						</div>
+						<div>
+							<div className="img"><img src="img/prolist5.jpg" alt="" /></div>
+							<div className="text">大礼包兑换</div>
+						</div>
+					</div>
+				)
+			}
+		})
+
+		var Mq = React.createClass({
+			render:function(){
+				return (
+					<div className="mq">
+						<span>通知</span>
+						<marquee behavior="scrool" direction="left">
+							"贝思客官方申明：我司近期发现有客户通过非正常渠道售卖的代金卡无法正常使用，目前我司正通过法律途径解决此问题。我司在此郑重申明，从未授权过任何渠道售卖我司代金卡，请客户通过正常渠道（如：官网、公司销售）进行购买消费。&#8203;"
+						</marquee>
+					</div>
+				)
+			}
+		})
+
+
+		var Imglist = React.createClass({
+			render:function(){
+				return (
+					<div className="imglist">
+						<div>
+							<img src="img/l1.jpg" alt="" />
+						</div>
+						<div>
+							<img src="img/l2.jpg" alt="" />
+						</div>
+						<div>
+							<img src="img/l3.jpg" alt="" />
+						</div>
+						<div>
+							<img src="img/l4.jpg" alt="" />
+						</div>
+						
+					</div>
+				)
+			}
+		})
+
+		
+		var Ban = React.createClass({
+			render:function(){
+				return (
+					<div className="ban">
+						<img src="img/ban.jpg" alt="" />
+					</div>
+				)
+			}
+		})
+
+		var Bana = React.createClass({
+			render:function(){
+				return (
+					<div className="ban">
+						<img src="img/ban1.jpg" alt="" />
+					</div>
+				)
+			}
+		})
+		
+		
+		var Banb = React.createClass({
+			render:function(){
+				return (
+					<div className="ban">
+						<img src="img/ban2.jpg" alt="" />
+					</div>
+				)
+			}
+		})
+
+
+		var Pl = React.createClass({
+			render:function(){
+				return (
+					<div className="pl">
+						<div>
+							<div className="top"><img src="img/hua1.jpg" alt="" /></div>
+							<div className="bt">
+								<p>洛可可甜心</p>
+								<p><span className="sp1">￥398</span><span>/1.8磅</span></p>
+							</div>
+						</div>
+						<div>
+							<div className="top"><img src="img/hua2.jpg" alt="" /></div>
+							<div className="bt">
+								<p>玫瑰女王</p>
+								<p><span className="sp1">￥398</span><span>/1.8磅</span></p>
+							</div>
+						</div>
+					</div>
+				)
+			}
+		})
+
+		var Pla = React.createClass({
+			render:function(){
+				return (
+					<div className="pl">
+						<div>
+							<div className="top"><img src="img/蟹芒班戟.png" alt="" /></div>
+							<div className="bt">
+								<p>蟹芒班戟</p>
+								<p><span className="sp1">￥98</span><span>/0.8磅</span></p>
+							</div>
+						</div>
+						<div>
+							<div className="top"><img src="img/吉致泡芙.png" alt="" /></div>
+							<div className="bt">
+								<p>吉致泡芙</p>
+								<p><span className="sp1">￥88</span><span>/0.8磅</span></p>
+							</div>
+						</div>
+					</div>
+				)
+			}
+		})
+
+
+		var Plb = React.createClass({
+			render:function(){
+				return (
+					<div className="pl">
+						<div>
+							<div className="top"><img src="img/可莱思迪客英国进口冰淇淋(500ml).jpg" alt="" /></div>
+							<div className="bt">
+								<p>可莱思迪客英国进口冰淇淋(500ml)</p>
+								<p><span className="sp1">￥99</span><span>/香草味</span></p>
+							</div>
+						</div>
+						<div>
+							<div className="top"><img src="img/可莱思迪客英国进口冰淇淋(500ml).jpg" alt="" /></div>
+							<div className="bt">
+								<p>可莱思迪客英国进口冰淇淋(500ml)</p>
+								<p><span className="sp1">￥99</span><span>/巧克力味</span></p>
+							</div>
+						</div>
+					</div>
+				)
+			}
+		})
+
+		
+		var Footer = React.createClass({
+			render:function(){
+				return (
+					<div className="footer">
+						<div className="footer1">
+							<div><img src="img/shouye.png" alt="" /></div>
+							<div><img src="img/feilei.png" alt="" /></div>
+							<div><img src="img/gouwuche.png" alt="" /></div>
+							<div><img src="img/wode.png" alt="" /></div>
+						</div>
+					</div>
+				)
+			}
+		})
+
+
+
+
+
+		//挂载到页面
+		ReactDOM.render(
+			<Box />,
+			document.getElementById("root")
+
+		)
+
+	</script>
+</body>
+</html>
